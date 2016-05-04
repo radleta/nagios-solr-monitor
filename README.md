@@ -2,8 +2,16 @@
 
 This is a plugin for Nagios that will parse the cores status of a Solr web app. It is written in Node.js.
 
+## Features
+
+* Ability to monitor multiple cores within solr
+* Ability to check the age of core
+* Ability to check the number of docs in a core
+* Outputs the age and docs as performance counter data for each core monitored
+
 ## Usage
 
+```
   Usage: cores [options] <host>
 
   checks the status and age of solr cores on a host
@@ -19,6 +27,7 @@ This is a plugin for Nagios that will parse the cores status of a Solr web app. 
     --age-critical [n]   The maximum age at which the cores becomes a CRITICAL.
     --docs-warning [n]   The minimum number of docs at which the cores becomes a WARNING.
     --docs-critical [n]  The minimum number of docs at which the cores becomes a CRITICAL.
+```
 
 ## Getting Started
 
